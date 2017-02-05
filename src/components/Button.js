@@ -1,9 +1,5 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
-//NOTE: With the children (destructured so it's not props.children)
-//...you can actually totally reuse this button, because
-// there's no reference to AlbumDetail in here at all,
-// and the "Buy Now" text is in AlbumDetail
 
 const Button = ({ whenPressed, children }) => {
   const { buttonStyle, textStyle } = styles;
